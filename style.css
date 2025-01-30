@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+    height: 100vh;
+}
+header{
+    background: linear-gradient(0deg, #000 4.9%, #574230 47.09%, #855123 97.4%);
+    width: 100vw;
+    height: 40vh;
+}
+.titleImageHolder img{
+    width: 60vw;
+}
+.titleImageHolder{
+    position: absolute;
+    top: 30%;
+}
+.profilePicture{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+
+}
+.profilePicture img{
+    width: 30vw;
+}
+  
+  .navUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+  }
+  .navUl .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .navUl .icon-content .tooltip {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  .navUl .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: 6px;
+  }
+  .navUl .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    color: #4d4d4d;
+    background-color: #ffff;
+    transition: all 0.3s ease-in-out;
+  }
+  .navUl .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
+  }
+  .navUl .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .navUl .icon-content a:hover {
+    color: white;
+  }
+  .navUl .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .navUl .icon-content a:hover .filled {
+    height: 100%;
+  }
+  .navUl .icon-content a[data-social="spotify"] .filled,
+  .navUl .icon-content a[data-social="spotify"] ~ .tooltip {
+    background-color: #1db954;
+  }
+  .navUl .icon-content a[data-social="instagram"] .filled,
+  .navUl .icon-content a[data-social="instagram"] ~ .tooltip {
+    background-color: #ffc273;
+  }
+  .navUl .icon-content a[data-social="youtube"] .filled,
+  .navUl .icon-content a[data-social="youtube"] ~ .tooltip {
+    background-color: #ff0931;
+  }
+  .navUl .icon-content a[data-social="tiktok"] .filled,
+  .navUl .icon-content a[data-social="tiktok"] ~ .tooltip {
+    background-color: #69c9d0;
+  }
+  .navUl .icon-content a[data-social="x"] .filled,
+  .navUl .icon-content a[data-social="x"] ~ .tooltip {
+    background-color: #1dcaff;
+}
+.topNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.topNav svg{
+    color: #000000;
+} 
