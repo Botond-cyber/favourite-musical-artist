@@ -172,7 +172,6 @@ header{
   color: #ffc273;
 }
 
-/* From Uiverse.io by Praashoo7 */ 
 .main {
   background-color: white;
   padding: 1em;
@@ -323,11 +322,12 @@ p{
   text-indent: 30px;
 }
 #backBtn{
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  color: white;
+  fill: white;
   font-size: 2em;
+}
+#backBtn:hover{
+  fill: #ffc273;
+  transform: scale(1.1);
 }
 .bars {
   justify-content: center;
@@ -375,4 +375,12 @@ p{
 }
 .aboutNav{
   display: none;
+  position: absolute;
+  top: 20%;
+  background-color: #111111;
+  padding: 20px;
+  width: 100px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
 }

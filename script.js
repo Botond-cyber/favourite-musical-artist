@@ -1,6 +1,10 @@
-const barBtn = document.getElementById('barcontainer')
-const nav = document.getElementById('aboutNav')
+const barBtn = document.querySelector('.barcontainer');
+const nav = document.querySelector('.aboutNav');
 
-barBtn.onclick = function(){
-    nav.style.display = 'block'
-}
+barBtn.onclick = function() {
+    if (nav.style.display === 'block') {
+        nav.style.display = 'none';
+    } else {
+        nav.style.display = 'block';
+    }
+};
