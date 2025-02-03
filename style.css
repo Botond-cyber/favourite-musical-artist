@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body{
     margin: 0;
     padding: 0;
@@ -316,6 +321,8 @@ p{
   color: #ffc273;
   font-size: 3em;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .aboutP{
   margin-top: 30px;
@@ -398,4 +405,32 @@ p{
   gap: 20px;
   width: 100%;
   height: 100%;
+}
+.aboutfooter{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  height: 50px;
+}
+.footericons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 500px;
+  place-self: center;
+  padding: 50px;
+}
+.footericons svg{
+  fill: white;
+  width: 30px;
+  height: 30px;
+}
+.footericons svg:hover{
+  fill: #ffc273;
+  transform: scale(1.1);
 }
