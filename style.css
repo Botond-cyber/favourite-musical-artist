@@ -1,157 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: #000000;
-}
-header{
-    background: linear-gradient(0deg, #000 4.9%, #574230 47.09%, #855123 97.4%);
-    width: 100vw;
-    height: 40vh;
-    margin: 0;
-}
-.titleImageHolder img{
-    width: 1100px;
-}
-.titleImageHolder{
-    position: absolute;
-    top: 30%;
-}
-.profilePicture{
-    position: absolute;
-    right: 10%;
-    top: 10%;
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.profilePicture img{
-    width: 500px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #000000;
+  overflow-x: hidden;
 }
-  
-  .navUl {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-    list-style: none;
-  }
-  .navUl .icon-content {
-    margin: 0 10px;
-    position: relative;
-  }
-  .navUl .icon-content .tooltip {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(50%);
-    color: #fff;
-    padding: 6px 10px;
-    border-radius: 15px;
-    opacity: 0;
-    visibility: hidden;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    z-index: 10;
-  }
-  .navUl .icon-content:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    top: 6px;
-  }
-  .navUl .icon-content a {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
-    color: #4d4d4d;
-    background-color: #ffff;
-    transition: all 0.3s ease-in-out;
-  }
-  .navUl .icon-content a:hover {
-    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
-  }
-  .navUl .icon-content a svg {
-    position: relative;
-    z-index: 1;
-    width: 30px;
-    height: 30px;
-  }
-  .navUl .icon-content a:hover {
-    color: white;
-  }
-  .navUl .icon-content a .filled {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #000;
-    transition: all 0.3s ease-in-out;
-  }
-  .navUl .icon-content a:hover .filled {
-    height: 100%;
-  }
-  .navUl .icon-content a[data-social="spotify"] .filled,
-  .navUl .icon-content a[data-social="spotify"] ~ .tooltip {
-    background-color: #1db954;
-  }
-  .navUl .icon-content a[data-social="instagram"] .filled,
-  .navUl .icon-content a[data-social="instagram"] ~ .tooltip {
-    background-color: #ffc273;
-  }
-  .navUl .icon-content a[data-social="youtube"] .filled,
-  .navUl .icon-content a[data-social="youtube"] ~ .tooltip {
-    background-color: #ff0931;
-  }
-  .navUl .icon-content a[data-social="tiktok"] .filled,
-  .navUl .icon-content a[data-social="tiktok"] ~ .tooltip {
-    background-color: #69c9d0;
-  }
-  .navUl .icon-content a[data-social="x"] .filled,
-  .navUl .icon-content a[data-social="x"] ~ .tooltip {
-    background-color: #1dcaff;
+
+header {
+  background: linear-gradient(0deg, #000 4.9%, #574230 47.09%, #855123 97.4%);
+  width: 100%;
+  height: 40vh;
+  margin: 0;
 }
-.topNav{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
+a {
+  text-decoration: none;
 }
-.topNav svg{
-    color: #000000;
-} 
-.sideNav{
-    position: absolute;
-    right: 10%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
-    color: white;
-    margin: 30% 0; 
-    font-size: 3em;
+
+.titleImageHolder img {
+  width: 900px;
 }
-.sideNav li{
+
+.titleImageHolder {
+  position: absolute;
+  margin-top: 300px;
+}
+
+.profilePicture {
+  position: absolute;
+  right: 60px;
+  top: 50px;
+}
+
+.profilePicture img {
+  width: 500px;
+}
+
+.navUl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+}
+
+.navUl .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+
+.navUl .icon-content .tooltip {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.navUl .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: 6px;
+}
+
+.navUl .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  color: #4d4d4d;
+  background-color: #ffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navUl .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
+}
+
+.navUl .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+
+.navUl .icon-content a:hover {
+  color: white;
+}
+
+.navUl .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.navUl .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.navUl .icon-content a[data-social="spotify"] .filled,
+.navUl .icon-content a[data-social="spotify"]~.tooltip {
+  background-color: #1db954;
+}
+
+.navUl .icon-content a[data-social="instagram"] .filled,
+.navUl .icon-content a[data-social="instagram"]~.tooltip {
+  background-color: #ffc273;
+}
+
+.navUl .icon-content a[data-social="youtube"] .filled,
+.navUl .icon-content a[data-social="youtube"]~.tooltip {
+  background-color: #ff0931;
+}
+
+.navUl .icon-content a[data-social="tiktok"] .filled,
+.navUl .icon-content a[data-social="tiktok"]~.tooltip {
+  background-color: #69c9d0;
+}
+
+.navUl .icon-content a[data-social="x"] .filled,
+.navUl .icon-content a[data-social="x"]~.tooltip {
+  background-color: #1dcaff;
+}
+
+.topNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.topNav svg {
+  color: #000000;
+}
+
+.sideNav {
+  position: absolute;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  color: white;
+  margin: 30% 0;
+  font-size: 3em;
+}
+
+.sideNav li {
   list-style: none;
   margin: 30px 0px;
 }
-.sideNav a{
+
+.sideNav a {
   color: white;
   text-decoration: none;
 }
+
 .sideNav a {
   color: white;
   text-decoration: none;
@@ -173,7 +203,8 @@ header{
 .sideNav a:hover::after {
   width: 100%;
 }
-.sideNav a:hover{
+
+.sideNav a:hover {
   color: #ffc273;
 }
 
@@ -183,10 +214,35 @@ header{
   padding-bottom: 1.1em;
   border-radius: 15px;
   margin: 1em;
-  width: 300px;
+  width: 500px;
+  height: 400px;
   position: absolute;
   left: 10%;
   top: 110%;
+}
+.main img{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  transform: rotate(180deg);
+}
+.main p{
+  color: black;
+}
+#reloadBtn{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+#reloadBtn:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: .8s cubic-bezier(.64,.06,.59,.82);
+}
+#reloadBtn:active{
+  fill: gray;
 }
 
 .loader {
@@ -198,7 +254,7 @@ header{
   transform: rotate(180deg);
   justify-content: right;
   border-radius: 10px;
-  transition: .4s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .loader:hover {
@@ -209,6 +265,7 @@ header{
 .currentplaying {
   display: flex;
   margin: 1em;
+  font-size: 2em;
 }
 
 .spotify {
@@ -303,35 +360,37 @@ header{
     height: 0.2em;
   }
 }
-.imagewrapper{
-  display: flex;
-  align-items: center;
-}
-p{
+
+p {
   color: white;
   font-size: 1.5em;
   margin: 0;
 }
-.aboutwrapper{
+
+.aboutwrapper {
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;
 }
-#aboutH1{
+
+#aboutH1 {
   color: #ffc273;
   font-size: 3em;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.aboutP{
+
+.aboutP {
   margin-top: 30px;
   text-indent: 30px;
 }
-.aboutNav svg:hover{
+
+.aboutNav svg:hover {
   fill: #ffc273 !important;
   transform: scale(1.1);
 }
+
 .bars {
   justify-content: center;
   align-items: center;
@@ -365,18 +424,19 @@ p{
   background-color: #404040;
 }
 
-.barcontainer input:checked ~ .bar:nth-child(2) {
+.barcontainer input:checked~.bar:nth-child(2) {
   transform: translateY(9.5px) rotate(45deg);
 }
 
-.barcontainer input:checked ~ .bar:nth-child(3) {
+.barcontainer input:checked~.bar:nth-child(3) {
   opacity: 0;
 }
 
-.barcontainer input:checked ~ .bar:nth-child(4) {
+.barcontainer input:checked~.bar:nth-child(4) {
   transform: translateY(-8px) rotate(-45deg);
 }
-.aboutNav{
+
+.aboutNav {
   display: none;
   position: absolute;
   top: 20%;
@@ -386,18 +446,22 @@ p{
   height: 500px;
   border-radius: 20px;
 }
-#discographyBtn svg{
-  fill:white;
+
+#discographyBtn svg {
+  fill: white;
   height: 50px;
 }
-#backBtn svg{
+
+#backBtn svg {
   fill: white;
 }
-.aboutA{
+
+.aboutA {
   color: #ffc273;
   text-decoration: none;
 }
-.about_nav_content{
+
+.about_nav_content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,7 +470,8 @@ p{
   width: 100%;
   height: 100%;
 }
-.aboutfooter{
+
+.aboutfooter {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -416,7 +481,8 @@ p{
   background-color: #111111;
   height: 50px;
 }
-.footericons{
+
+.footericons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -425,12 +491,14 @@ p{
   place-self: center;
   padding: 50px;
 }
-.footericons svg{
+
+.footericons svg {
   fill: white;
   width: 30px;
   height: 30px;
 }
-.footericons svg:hover{
+
+.footericons svg:hover {
   fill: #ffc273;
   transform: scale(1.1);
 }
