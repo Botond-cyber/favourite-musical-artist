@@ -15,39 +15,41 @@ body {
 }
 
 header {
-  background: linear-gradient(0deg, #000 4.9%, #574230 47.09%, #855123 97.4%);
+  background: rgb(133, 81, 35);
+  background: linear-gradient(rgba(133, 81, 35, 1) 0%, rgba(87, 66, 48, 1) 19%, rgba(0, 0, 0, 1) 100%);
   width: 100%;
-  height: 40vh;
+  height: 700px;
   margin: 0;
+  top: 0;
 }
-a {
-  text-decoration: none;
-}
-.indexfooter{
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  bottom: -700px;
-  text-align: right;
-  padding-right: 10px;
-}
+
 .titleImageHolder img {
   width: 900px;
 }
 
 .titleImageHolder {
-  position: absolute;
   margin-top: 300px;
 }
 
 .profilePicture {
-  position: absolute;
-  right: 60px;
-  top: 50px;
+  float: right;
+  margin-top: -400px;
 }
 
 .profilePicture img {
   width: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.indexfooter {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 50px;
 }
 
 .navUl {
@@ -155,10 +157,7 @@ a {
 }
 
 .topNav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
@@ -168,14 +167,13 @@ a {
   color: #000000;
 }
 
-.sideNav ul{
-  position: absolute;
-  right: 10%;
+.sideNav ul {
   display: flex;
+  float: right;
+  margin: -500px 100px 50px 50px;
   flex-direction: column;
   padding: 20px 40px;
   color: white;
-  margin: 425px 0 ;
   font-size: 3em;
   display: flex;
   flex-direction: column;
@@ -219,40 +217,45 @@ a {
   color: #ffc273;
 }
 
+.index_content_wrapper {
+  width: 100%;
+}
+
 .main {
   background-color: white;
   padding: 1em;
   padding-bottom: 1.1em;
   border-radius: 15px;
-  margin: 1em;
   width: 500px;
   height: 400px;
-  position: absolute;
-  left: 10%;
-  top: 830px;
+  margin: 200px 50px 50px 50px;
+
 }
-.main img{
+
+.main img {
   height: 40px;
   width: 40px;
   border-radius: 5px;
   transform: rotate(180deg);
 }
-.main p{
+
+.main p {
   color: black;
 }
-#reloadBtn{
+
+#reloadBtn {
   width: 30px;
   height: 30px;
-  position: absolute;
-  right: 20px;
-  top: 30px;
+  float: right;
 }
-#reloadBtn:hover{
+
+#reloadBtn:hover {
   cursor: pointer;
   transform: rotate(360deg);
-  transition: .8s cubic-bezier(.64,.06,.59,.82);
+  transition: .8s cubic-bezier(.64, .06, .59, .82);
 }
-#reloadBtn:active{
+
+#reloadBtn:active {
   fill: gray;
 }
 
@@ -397,7 +400,7 @@ p {
   text-indent: 30px;
 }
 
-.aboutNav a:hover svg{
+.aboutNav a:hover svg {
   fill: #ffc273 !important;
   transform: scale(1.1);
 }
@@ -482,6 +485,7 @@ p {
   height: 100%;
   text-align: center;
 }
+
 .about_nav_content a {
   color: #ffc273;
   text-decoration: none;
@@ -518,10 +522,12 @@ p {
   fill: #ffc273;
   transform: scale(1.1);
 }
-.discographybody{
+
+.discographybody {
   margin: 20px;
 }
-.discographytable{
+
+.discographytable {
   width: 100%;
   border-collapse: collapse;
   margin: 0 auto;
@@ -529,95 +535,254 @@ p {
   margin-bottom: 50px;
   color: #fff;
 }
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
-td,th,table{
+
+td,
+th,
+table {
   padding: 10px;
   text-align: center;
   border: 1px solid #fff;
 }
-@media only screen and (max-width: 1450px) {
-  .profilePicture img{
-    width: 300px;
-  }
+
+@media only screen and (min-width: 1450px) {
   .profilePicture {
-    position: absolute;
-    right: 60px;
-    top: 160px;
+    margin-right: 60px;
   }
 
 }
+
+@media only screen and (max-width: 1450px) {
+  .profilePicture img {
+    width: 300px;
+    margin-top: 150px;
+    margin-right: 45px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
-  .profilePicture img{
+  .profilePicture img {
     width: 200px;
   }
+
   .profilePicture {
-    position: absolute;
-    right: 60px;
-    top: 160px;
+    margin-top: 0px;
+    margin-right: 60px;
   }
+
   .titleImageHolder img {
     width: 700px;
   }
+
   .titleImageHolder {
     position: absolute;
     margin-top: 200px;
   }
 }
+
 @media only screen and (max-width: 1000px) {
-  .indexbody{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  }
-  *{
-    margin: 0;
-    padding: 0px;
-  }
-  .container{
-    
-  }
-  .main{
-    position: absolute;
-    top: 700px;
-  }
-  .imagewrapper{
-    display: flex;
+  .imagewrapper {
     flex-direction: column;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  .imagewrapper img{
-    margin-top: 100px;
-  }
+
   .profilePicture {
-    width: 100vw;
+    margin-bottom: 500px;
+    margin-right: 0;
+  }
+
+  .profilePicture img {
+    margin-right: 0 !important;
+  }
+
+  .index_content_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    width: 100%;
+  }
+
+  .main {
+    margin-bottom: 100px;
+  }
+
+  .sideNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 0;
   }
-  .sideNav ul{
-    position: absolute;
-    top: 800px;
-    margin: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  .sideNav ul {
+    margin: 0;
   }
-  .sideNav{
+
+  .indexfooter {
+    margin-top: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .imagewrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profilePicture {
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .titleImageHolder img {
+    width: 500px;
+  }
+
+  .index_content_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+  }
+
+  .topNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main {
+    margin-bottom: 100px;
+    width: 450px;
+    height: fit-content;
+  }
+  #reloadBtn svg{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+
+  .sideNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .sideNav ul {
+    margin: 0;
+  }
+
+  .indexfooter {
+    margin-top: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .imagewrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profilePicture {
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .titleImageHolder img {
+    width: 300px;
+  }
+
+  .index_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .topNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main {
+    margin-bottom: 100px;
+    width: 300px;
+    height: fit-content;
+  }
+
+  .main img {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    transform: rotate(180deg);
+  }
+
+  .main .albumcover {
+    width: 30px;
+    height: 30px;
+  }
+
+  .main p {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+
+  .pslot {
+    font-size: 0.5em;
+  }
+
+  .sideNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .sideNav ul {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .indexfooter {
+    margin-top: 300px;
+    font-size: 7px;
   }
 
 }
