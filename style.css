@@ -229,7 +229,7 @@ a {
   height: 400px;
   position: absolute;
   left: 10%;
-  top: 106%;
+  top: 830px;
 }
 .main img{
   height: 40px;
@@ -529,8 +529,95 @@ p {
   margin-bottom: 50px;
   color: #fff;
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 td,th,table{
   padding: 10px;
   text-align: center;
   border: 1px solid #fff;
+}
+@media only screen and (max-width: 1450px) {
+  .profilePicture img{
+    width: 300px;
+  }
+  .profilePicture {
+    position: absolute;
+    right: 60px;
+    top: 160px;
+  }
+
+}
+@media only screen and (max-width: 1200px) {
+  .profilePicture img{
+    width: 200px;
+  }
+  .profilePicture {
+    position: absolute;
+    right: 60px;
+    top: 160px;
+  }
+  .titleImageHolder img {
+    width: 700px;
+  }
+  .titleImageHolder {
+    position: absolute;
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .indexbody{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  }
+  *{
+    margin: 0;
+    padding: 0px;
+  }
+  .container{
+    
+  }
+  .main{
+    position: absolute;
+    top: 700px;
+  }
+  .imagewrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagewrapper img{
+    margin-top: 100px;
+  }
+  .profilePicture {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 0;
+  }
+  .sideNav ul{
+    position: absolute;
+    top: 800px;
+    margin: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sideNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 }

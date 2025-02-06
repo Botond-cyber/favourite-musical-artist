@@ -16,6 +16,7 @@ const slot3pics = document.getElementById("slot3pics");
 const slot4pics = document.getElementById("slot4pics");
 const reloadBtn = document.getElementById("reloadBtn");
 
+
 const songsr = ["My gasoline", "Heute Nacht", "Activating", "No Escape (Sped Up)", "Ecstasy", "Open Sesame (Abracadabra)", "Tell Me Why", "Satisfaction"];
 const descriptions = {
     "My gasoline": "Fēlēs, Maddix",
@@ -76,6 +77,5 @@ function randomizeSongs() {
 }
 
 reloadBtn.onclick = randomizeSongs;
-
-// Initial randomization on page load
 randomizeSongs();
+;
