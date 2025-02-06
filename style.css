@@ -523,27 +523,45 @@ p {
   transform: scale(1.1);
 }
 
-.discographybody {
-  margin: 20px;
+.year_selector_wrapper{
+  width: 100px;
+  float: right;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+.year_selector_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.year_selector_content li{
+  list-style: none;
+  margin-bottom: 5px;
+
+}
+.year_selector_content input:checked + label{
+  color: #ffc273;
+  opacity: 1;
+}
+.year_selector_check{
+  opacity: 0;
+}
+label{
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+  font-size: 1.75em;
 }
 
 .discographytable {
-  width: 100%;
-  border-collapse: collapse;
+  max-width: 900px;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
   color: #fff;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 td,
@@ -551,7 +569,15 @@ th,
 table {
   padding: 10px;
   text-align: center;
-  border: 1px solid #fff;
+}
+th {
+  font-size: 1.5em;
+  color: #ffc273;
+  border-bottom: 4px solid #fff;
+}
+.separator{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 30px;
 }
 
 @media only screen and (min-width: 1450px) {
