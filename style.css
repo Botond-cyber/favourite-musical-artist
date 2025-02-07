@@ -989,6 +989,7 @@ fieldset input, fieldset textarea{
   }
   .contatct_container h1{
     font-size: 1.5em;
+    text-align: center;
   }
   fieldset input, fieldset textarea{
     width: 90%;
