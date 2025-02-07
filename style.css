@@ -525,9 +525,11 @@ p {
 
 .year_selector_wrapper{
   width: 100px;
-  float: right;
-  margin-top: 100px;
-  margin-right: 100px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  background-color: #111111;
+  border-radius: 25px;
 }
 .year_selector_content{
   display: flex;
@@ -548,6 +550,12 @@ p {
 }
 .year_selector_check{
   opacity: 0;
+  display: none;
+}
+#barcon2{
+  position: absolute;
+  top: 20%;
+  left: 5%;
 }
 label{
   color: white;
@@ -870,5 +878,28 @@ th {
   .aboutFooter svg{
     width: 20px;
     height: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #yearselect{
+    display: block!important;
+  }
+  #barcon2{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .bars_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+  }
+  .barcontainer{
+    position: relative;
+  }
+  #barcon2{
+    position: relative;
   }
 }

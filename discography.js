@@ -36,4 +36,20 @@ function reorderRows() {
             table.appendChild(row);
         }
     });
-}
+};
+const barBt2n = document.getElementById('barcon2');
+const nav2 = document.getElementById('yearselect')
+const barcheck2 = document.getElementById('barcheck2');
+
+window.onload = function() {
+    nav2.style.display = 'none';
+    barcheck2.checked = false;
+};
+
+barBt2n.onclick = function() {
+    if (nav2.style.display === 'block') {
+        nav2.style.display = 'none';
+    } else {
+        nav2.style.display = 'block';
+    }
+};

@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="discographybody">
-    <div class="barcontainer">
-      <label class="bars">
-        <input type="checkbox" id="barcheck"/>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </label>
-    </div>
+    <span class="bars_wrapper">
+      <div class="barcontainer">
+        <label class="bars">
+          <input type="checkbox" id="barcheck" />
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+      </div>
+      <div class="barcontainer" id="barcon2">
+        <label class="bars">
+          <input type="checkbox" id="barcheck2" />
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+      </div>
+    </span>
 
     <nav class="aboutNav">
       <div class="about_nav_content">
@@ -45,7 +55,7 @@
           </svg>
           <h2>Homepage</h2>
         </a>
-        <a href="Discography.html" id="discographyBtn" title="Discography">
+        <a href="about.html" id="discographyBtn" title="Discography">
           <svg
             fill="#000000"
             version="1.1"
@@ -54,27 +64,20 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
             width="50px"
             height="50px"
-            viewBox="0 0 394.751 394.751"
+            viewBox="0 0 416.979 416.979"
             xml:space="preserve"
           >
             <g>
               <path
-                d="M197.38,0C88.548,0,0.004,88.536,0.004,197.377c0,108.834,88.536,197.374,197.376,197.374
-            c108.836,0,197.367-88.548,197.367-197.374C394.747,88.548,306.207,0,197.38,0z M17.863,225.377c-1.421-9.133-2.158-18.49-2.158-28
-            C15.705,97.198,97.2,15.701,197.38,15.701c8.093,0,16.056,0.591,23.878,1.617l-13.815,20.366
-            c-3.342-0.207-6.674-0.505-10.062-0.505c-88.332,0-160.197,71.865-160.197,160.199c0,4.408,0.307,8.757,0.66,13.08L17.863,225.377z
-            M45.402,204.792c-0.123-2.477-0.377-4.913-0.377-7.414c0-84.003,68.347-152.348,152.346-152.348c1.666,0,3.274,0.199,4.923,0.252
-            l-17.871,26.353c-59.637,6.091-107.11,53.838-112.831,113.588L45.402,204.792z M178.437,80.489l-34.203,50.458l-63.762,47.65
-            C88.518,128.332,128.188,88.616,178.437,80.489z M197.38,264.093c-36.844,0-66.72-29.875-66.72-66.716
-            c0-36.842,29.875-66.723,66.72-66.723c36.842,0,66.718,29.881,66.718,66.723C264.098,234.218,234.222,264.093,197.38,264.093z"
-              />
-              <path
-                d="M231.981,197.377c0,19.084-15.524,34.608-34.602,34.608c-4.342,0-7.851,3.503-7.851,7.851c0,4.34,3.508,7.851,7.851,7.851
-            c27.733,0,50.303-22.569,50.303-50.31c0-4.342-3.502-7.852-7.851-7.852C235.492,189.525,231.981,193.036,231.981,197.377z"
+                d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85
+		c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786
+		c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576
+		c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765
+		c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z"
               />
             </g>
           </svg>
-          <h2>Discography</h2>
+          <h2>About</h2>
         </a>
         <a href="https://maddixmusic.com/" title="Tour dates">
           <svg
@@ -110,26 +113,96 @@
       </div>
     </nav>
 
-    <div class="year_selector_wrapper">
+    <div class="year_selector_wrapper" id="yearselect">
       <div class="year_selector_content">
         <ul>
-          <li><input type="checkbox" class="year_selector_check" id="check2013"><label for="check2013">2013</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2014"><label for="check2014">2014</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2015"><label for="check2015">2015</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2016"><label for="check2016">2016</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2017"><label for="check2017">2017</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2018"><label for="check2018">2018</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2019"><label for="check2019">2019</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2020"><label for="check2020">2020</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2021"><label for="check2021">2021</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2022"><label for="check2022">2022</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2023"><label for="check2023">2023</label></li>
-          <li><input type="checkbox" class="year_selector_check" id="check2024"><label for="check2024">2024</label></li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2013"
+            /><label for="check2013">2013</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2014"
+            /><label for="check2014">2014</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2015"
+            /><label for="check2015">2015</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2016"
+            /><label for="check2016">2016</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2017"
+            /><label for="check2017">2017</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2018"
+            /><label for="check2018">2018</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2019"
+            /><label for="check2019">2019</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2020"
+            /><label for="check2020">2020</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2021"
+            /><label for="check2021">2021</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2022"
+            /><label for="check2022">2022</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2023"
+            /><label for="check2023">2023</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="year_selector_check"
+              id="check2024"
+            /><label for="check2024">2024</label>
+          </li>
         </ul>
       </div>
     </div>
-
-
 
     <table class="discographytable">
       <tbody>
@@ -139,444 +212,445 @@
           <th>Record Label</th>
           <th>Additional Information</th>
         </tr>
-        <tbody class="hide" id="tr2013">
-          <tr>
-            <td>"Touching the Sky"</td>
-            <td rowspan="2" class="separator">2013</td>
-            <td>Armada Music</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="separator">"Splash"</td>
-            <td class="separator">Free Download</td>
-            <td class="separator"></td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2014">
-          <tr>
-            <td>"Rampant"</td>
-            <td rowspan="6" class="separator">2014</td>
-            <td>Oxygen Records ( Spinnin' )</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Send Us Some Bottles"</td>
-            <td>Free Download</td>
-          </tr>
-          <tr>
-            <td>"Anthems"</td>
-            <td>Cyron Recordings</td>
-            <td>with New Knife Gang</td>
-          </tr>
-          <tr>
-            <td>"Solar Flare"</td>
-            <td rowspan="2">Free Download</td>
-          </tr>
-          <tr>
-            <td>"Gravity"</td>
-            <td></td>
-          </tr>
+      </tbody>
+
+      <tbody class="hide" id="tr2013">
+        <tr>
+          <td>"Touching the Sky"</td>
+          <td rowspan="2" class="separator">2013</td>
+          <td>Armada Music</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="separator">"Splash"</td>
+          <td class="separator">Free Download</td>
+          <td class="separator"></td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2014">
+        <tr>
+          <td>"Rampant"</td>
+          <td rowspan="6" class="separator">2014</td>
+          <td>Oxygen Records ( Spinnin' )</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Send Us Some Bottles"</td>
+          <td>Free Download</td>
+        </tr>
+        <tr>
+          <td>"Anthems"</td>
+          <td>Cyron Recordings</td>
+          <td>with New Knife Gang</td>
+        </tr>
+        <tr>
+          <td>"Solar Flare"</td>
+          <td rowspan="2">Free Download</td>
+        </tr>
+        <tr>
+          <td>"Gravity"</td>
+          <td></td>
+        </tr>
         <tr>
           <td class="separator">"Get Busy"</td>
           <td class="separator">F! Recordings</td>
           <td class="separator">with Dirty Herz</td>
         </tr>
       </tbody>
-        <tbody class="hide" id="tr2015">
-          <tr>
-            <td>"Raise Em Up"</td>
-            <td rowspan="5" class="separator">2015</td>
-            <td>Armada Trice</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"True Blood"</td>
-            <td>Free Download</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Riptide"</td>
-            <td>Revealed Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Vortex"</td>
-            <td>Free Download</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="separator">"Ghosts"</td>
-            <td class="separator">Revealed Recordings</td>
-            <td class="separator"></td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2016">
-          <tr>
-            <td>"Pulsar"</td>
-            <td rowspan="11" class="separator">2016</td>
-            <td>Armada Trice</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Lynx"</td>
-            <td>Revealed Recordings</td>
-            <td>with Futuristic Polar Bears</td>
-          </tr>
-          <tr>
-            <td>"Tumalon"</td>
-            <td>Wall Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Jackal"</td>
-            <td>Free Download</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Voltage"</td>
-            <td rowspan="2">Revealed Recordings</td>
-            <td>with Jayden Jaxx</td>
-          </tr>
-          <tr>
-            <td>"Dirty Bassline"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Zodiac"</td>
-            <td>Free Download</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Invictus"</td>
-            <td>Revealed Recordings</td>
-            <td>with Olly James</td>
-          </tr>
-          <tr>
-            <td>"Unstoppable"</td>
-            <td>Spinnin' Premium (Spinnin')</td>
-            <td>with Tony Junior</td>
-          </tr>
-          <tr>
-            <td>"Game On"</td>
-            <td rowspan="2" class="separator">Revealed Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="separator">"Shake It"</td>
-            <td class="separator">with Joey Dale</td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2017">
-          <tr>
-            <td>"Trippin"</td>
-            <td rowspan="10" class="separator">2017</td>
-            <td>Wall Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Bang"</td>
-            <td>Revealed Recordings</td>
-            <td>with Kevu</td>
-          </tr>
-          <tr>
-            <td>"Fauda"</td>
-            <td>Metanoia Music</td>
-            <td>with Rivero</td>
-          </tr>
-          <tr>
-            <td>"B.A.S.E"</td>
-            <td rowspan="3">Revealed Recordings</td>
-            <td>with Kill The Buzz</td>
-          </tr>
-          <tr>
-            <td>"Smash This Beat"</td>
-            <td>with Hardwell</td>
-          </tr>
-          <tr>
-            <td>"Showdown"</td>
-            <td>with LoaX</td>
-          </tr>
-          <tr>
-            <td>"Badman"</td>
-            <td>Pressplay Recordings</td>
-            <td>with Futuristic Polar Bears</td>
-          </tr>
-          <tr>
-            <td>"The Underground"</td>
-            <td rowspan="3" class="separator">Revealed Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Trabanca"</td>
-            <td>with Junior</td>
-          </tr>
-          <tr>
-            <td class="separator">"Mantra"</td>
-            <td class="separator"></td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2018">
-          <tr>
-            <td>"Lose Control"</td>
-            <td rowspan="7" class="separator">2018</td>
-            <td rowspan="6">Revealed Recordings</td>
-          </tr>
-          <tr>
-            <td>"Soldier"</td>
-            <td>with Kevu featuring LePrince</td>
-          </tr>
-          <tr>
-            <td>"Keep It Jackin"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Bella Ciao"</td>
-            <td>cover of Bella Ciao, with Hardwell</td>
-          </tr>
-          <tr>
-            <td>"The Prophecy"</td>
-            <td>with Timmy Trumpet</td>
-          </tr>
-          <tr>
-            <td>"Shuttin It Down"</td>
-            <td>featuring Kris Kiss</td>
-          </tr>
-          <tr>
-            <td class="separator">"Mangalam"</td>
-            <td class="separator">Heavyweight Records</td>
-            <td class="separator">with Will Sparks</td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2019">
-          <tr>
-            <td>"Zero"</td>
-            <td rowspan="6" class="separator">2019</td>
-            <td rowspan="6" class="separator">Revealed Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"The Omen"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Invincible (Till The Day We Die)"</td>
-            <td>featuring Michael Jo</td>
-          </tr>
-          <tr>
-            <td>"With Or Without You"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"People Are Strange"</td>
-            <td>with Kaaze featuring Nino Lucarelli</td>
-          </tr>
-          <tr>
-            <td class="separator">"Future Noise"</td>
-            <td class="separator">with Kaaze</td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2020">
-          <tr>
-            <td>"Follow Me"</td>
-            <td rowspan="10" class="separator">2020</td>
-            <td rowspan="10" class="separator">Revealed Recordings</td>
-            <td>with SaberZ</td>
-          </tr>
-          <tr>
-            <td>"Bad Meets Evil"</td>
-            <td>featuring Anvy</td>
-          </tr>
-          <tr>
-            <td>"Ecstasy"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Technology"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Existence"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Electric"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Tekno"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Your Mind"</td>
-            <td rowspan="2">Tribe EP Vol.1</td>
-          </tr>
-          <tr>
-            <td>"The Rave"</td>
-          </tr>
-          <tr>
-            <td class="separator">"Reality"</td>
-            <td class="separator"></td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2021">
-          <tr>
-            <td>"Activating"</td>
-            <td rowspan="10" class="separator">2021</td>
-            <td>Rave Culture</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Superheroes"</td>
-            <td rowspan="5">Revealed Recordings</td>
-            <td>interpolation of Daddy DJ by Daddy DJ</td>
-          </tr>
-          <tr>
-            <td>"In My Body"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Home"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Receive Life"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Acid Soul"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Space In Your Mind"</td>
-            <td>3rd Dale Universe</td>
-            <td>with The Rocketman</td>
-          </tr>
-          <tr>
-            <td>"Pydna"</td>
-            <td rowspan="3" class="separator">Revealed Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Different State"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="separator">"State Of Mind"</td>
-            <td class="separator"></td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2022">
-          <tr>
-            <td>"The Formula"</td>
-            <td rowspan="7" class="separator">2022</td>
-            <td rowspan="2">Revealed Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Culture"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Purpose"</td>
-            <td>Maxximize Records (Spinnin')</td>
-            <td>with Blasterjaxx</td>
-          </tr>
-          <tr>
-            <td>"Ce Soir (Voulez-Vous)"</td>
-            <td rowspan="4" class="separator">Revealed Recordings</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"No Escape"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>"Heute Nacht"</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="separator">"Thrill"</td>
-            <td class="separator">with Linka &amp; Gregor Potter</td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2023">
-          <tr>
-            <td>"Take Me Away Again"</td>
-            <td rowspan="8" class="separator">2023</td>
-            <td>Spinnin' Records</td>
-            <td>
-              cover of "Take Me Away" by 4 Strings, with Hardwell &amp; 4 Strings
-            </td>
-          </tr>
-          <tr>
-            <td>"Raw Diamonds"</td>
-            <td rowspan="3">Revealed Recordings</td>
-            <td>featuring Penelope</td>
-          </tr>
-          <tr>
-            <td>"Revolution"</td>
-            <td>with Hardwell &amp; Timmy Trumpet</td>
-          </tr>
-          <tr>
-            <td>"Acid"</td>
-            <td>with Hardwell featuring Luciana</td>
-          </tr>
-          <tr>
-            <td>"Close To You"</td>
-            <td>Dharma Worldwide (Spinnin') / Extatic Records (Revealed)</td>
-            <td>with Kshmr</td>
-          </tr>
-          <tr>
-            <td>"My Gasoline"</td>
-            <td>Extatic Records (Revealed)</td>
-            <td>featuring Fēlēs</td>
-          </tr>
-          <tr>
-            <td>"Hypnotizing"</td>
-            <td>1605</td>
-            <td>with DJ Umek</td>
-          </tr>
-          <tr>
-            <td class="separator">"90s Bitch"</td>
-            <td class="separator">Extatic Records (Revealed)</td>
-            <td class="separator">with The Rocketman</td>
-          </tr>
-        </tbody>
-        <tbody class="hide" id="tr2024">
-          <tr>
-            <td>"Spiritum"</td>
-            <td rowspan="6" class="separator">2024</td>
-            <td>We Next (Sony Music )</td>
-            <td>with Vini Vici &amp; Shibui</td>
-          </tr>
-          <tr>
-            <td>"Open Sesame (Abracadabra)"</td>
-            <td rowspan="2">Revealed Recordings</td>
-            <td>rework of Open Sesame by Leila K, featuring Leila K</td>
-          </tr>
-          <tr>
-            <td>"16"</td>
-            <td>cover of "16" by Ard Und Jorn, with Hardwell and Blasterjaxx</td>
-          </tr>
-          <tr>
-            <td>"Adrenalina (Minha Gasolina)"</td>
-            <td>Extatic Records (Revealed)</td>
-            <td>with Ceres</td>
-          </tr>
-          <tr>
-            <td>"Meet Her At The Love Parade"</td>
-            <td>Smash The House</td>
-            <td>
-              rework of Meet Her at the Love Parade Da Hool, with Dimitri Vegas
-              &amp; Like Mike &amp; Da Hool featuring Kiki Solvej
-            </td>
-          </tr>
-          <tr>
-            <td class="separator">"Love Takes Over"</td>
-            <td class="separator">Extatic Records (Revealed)</td>
-            <td class="separator" >featuring Sarah de Warren</td>
-          </tr>
-        </tbody>
+      <tbody class="hide" id="tr2015">
+        <tr>
+          <td>"Raise Em Up"</td>
+          <td rowspan="5" class="separator">2015</td>
+          <td>Armada Trice</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"True Blood"</td>
+          <td>Free Download</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Riptide"</td>
+          <td>Revealed Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Vortex"</td>
+          <td>Free Download</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="separator">"Ghosts"</td>
+          <td class="separator">Revealed Recordings</td>
+          <td class="separator"></td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2016">
+        <tr>
+          <td>"Pulsar"</td>
+          <td rowspan="11" class="separator">2016</td>
+          <td>Armada Trice</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Lynx"</td>
+          <td>Revealed Recordings</td>
+          <td>with Futuristic Polar Bears</td>
+        </tr>
+        <tr>
+          <td>"Tumalon"</td>
+          <td>Wall Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Jackal"</td>
+          <td>Free Download</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Voltage"</td>
+          <td rowspan="2">Revealed Recordings</td>
+          <td>with Jayden Jaxx</td>
+        </tr>
+        <tr>
+          <td>"Dirty Bassline"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Zodiac"</td>
+          <td>Free Download</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Invictus"</td>
+          <td>Revealed Recordings</td>
+          <td>with Olly James</td>
+        </tr>
+        <tr>
+          <td>"Unstoppable"</td>
+          <td>Spinnin' Premium (Spinnin')</td>
+          <td>with Tony Junior</td>
+        </tr>
+        <tr>
+          <td>"Game On"</td>
+          <td rowspan="2" class="separator">Revealed Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="separator">"Shake It"</td>
+          <td class="separator">with Joey Dale</td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2017">
+        <tr>
+          <td>"Trippin"</td>
+          <td rowspan="10" class="separator">2017</td>
+          <td>Wall Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Bang"</td>
+          <td>Revealed Recordings</td>
+          <td>with Kevu</td>
+        </tr>
+        <tr>
+          <td>"Fauda"</td>
+          <td>Metanoia Music</td>
+          <td>with Rivero</td>
+        </tr>
+        <tr>
+          <td>"B.A.S.E"</td>
+          <td rowspan="3">Revealed Recordings</td>
+          <td>with Kill The Buzz</td>
+        </tr>
+        <tr>
+          <td>"Smash This Beat"</td>
+          <td>with Hardwell</td>
+        </tr>
+        <tr>
+          <td>"Showdown"</td>
+          <td>with LoaX</td>
+        </tr>
+        <tr>
+          <td>"Badman"</td>
+          <td>Pressplay Recordings</td>
+          <td>with Futuristic Polar Bears</td>
+        </tr>
+        <tr>
+          <td>"The Underground"</td>
+          <td rowspan="3" class="separator">Revealed Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Trabanca"</td>
+          <td>with Junior</td>
+        </tr>
+        <tr>
+          <td class="separator">"Mantra"</td>
+          <td class="separator"></td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2018">
+        <tr>
+          <td>"Lose Control"</td>
+          <td rowspan="7" class="separator">2018</td>
+          <td rowspan="6">Revealed Recordings</td>
+        </tr>
+        <tr>
+          <td>"Soldier"</td>
+          <td>with Kevu featuring LePrince</td>
+        </tr>
+        <tr>
+          <td>"Keep It Jackin"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Bella Ciao"</td>
+          <td>cover of Bella Ciao, with Hardwell</td>
+        </tr>
+        <tr>
+          <td>"The Prophecy"</td>
+          <td>with Timmy Trumpet</td>
+        </tr>
+        <tr>
+          <td>"Shuttin It Down"</td>
+          <td>featuring Kris Kiss</td>
+        </tr>
+        <tr>
+          <td class="separator">"Mangalam"</td>
+          <td class="separator">Heavyweight Records</td>
+          <td class="separator">with Will Sparks</td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2019">
+        <tr>
+          <td>"Zero"</td>
+          <td rowspan="6" class="separator">2019</td>
+          <td rowspan="6" class="separator">Revealed Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"The Omen"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Invincible (Till The Day We Die)"</td>
+          <td>featuring Michael Jo</td>
+        </tr>
+        <tr>
+          <td>"With Or Without You"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"People Are Strange"</td>
+          <td>with Kaaze featuring Nino Lucarelli</td>
+        </tr>
+        <tr>
+          <td class="separator">"Future Noise"</td>
+          <td class="separator">with Kaaze</td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2020">
+        <tr>
+          <td>"Follow Me"</td>
+          <td rowspan="10" class="separator">2020</td>
+          <td rowspan="10" class="separator">Revealed Recordings</td>
+          <td>with SaberZ</td>
+        </tr>
+        <tr>
+          <td>"Bad Meets Evil"</td>
+          <td>featuring Anvy</td>
+        </tr>
+        <tr>
+          <td>"Ecstasy"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Technology"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Existence"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Electric"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Tekno"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Your Mind"</td>
+          <td rowspan="2">Tribe EP Vol.1</td>
+        </tr>
+        <tr>
+          <td>"The Rave"</td>
+        </tr>
+        <tr>
+          <td class="separator">"Reality"</td>
+          <td class="separator"></td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2021">
+        <tr>
+          <td>"Activating"</td>
+          <td rowspan="10" class="separator">2021</td>
+          <td>Rave Culture</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Superheroes"</td>
+          <td rowspan="5">Revealed Recordings</td>
+          <td>interpolation of Daddy DJ by Daddy DJ</td>
+        </tr>
+        <tr>
+          <td>"In My Body"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Home"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Receive Life"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Acid Soul"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Space In Your Mind"</td>
+          <td>3rd Dale Universe</td>
+          <td>with The Rocketman</td>
+        </tr>
+        <tr>
+          <td>"Pydna"</td>
+          <td rowspan="3" class="separator">Revealed Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Different State"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="separator">"State Of Mind"</td>
+          <td class="separator"></td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2022">
+        <tr>
+          <td>"The Formula"</td>
+          <td rowspan="7" class="separator">2022</td>
+          <td rowspan="2">Revealed Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Culture"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Purpose"</td>
+          <td>Maxximize Records (Spinnin')</td>
+          <td>with Blasterjaxx</td>
+        </tr>
+        <tr>
+          <td>"Ce Soir (Voulez-Vous)"</td>
+          <td rowspan="4" class="separator">Revealed Recordings</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"No Escape"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>"Heute Nacht"</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="separator">"Thrill"</td>
+          <td class="separator">with Linka &amp; Gregor Potter</td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2023">
+        <tr>
+          <td>"Take Me Away Again"</td>
+          <td rowspan="8" class="separator">2023</td>
+          <td>Spinnin' Records</td>
+          <td>
+            cover of "Take Me Away" by 4 Strings, with Hardwell &amp; 4 Strings
+          </td>
+        </tr>
+        <tr>
+          <td>"Raw Diamonds"</td>
+          <td rowspan="3">Revealed Recordings</td>
+          <td>featuring Penelope</td>
+        </tr>
+        <tr>
+          <td>"Revolution"</td>
+          <td>with Hardwell &amp; Timmy Trumpet</td>
+        </tr>
+        <tr>
+          <td>"Acid"</td>
+          <td>with Hardwell featuring Luciana</td>
+        </tr>
+        <tr>
+          <td>"Close To You"</td>
+          <td>Dharma Worldwide (Spinnin') / Extatic Records (Revealed)</td>
+          <td>with Kshmr</td>
+        </tr>
+        <tr>
+          <td>"My Gasoline"</td>
+          <td>Extatic Records (Revealed)</td>
+          <td>featuring Fēlēs</td>
+        </tr>
+        <tr>
+          <td>"Hypnotizing"</td>
+          <td>1605</td>
+          <td>with DJ Umek</td>
+        </tr>
+        <tr>
+          <td class="separator">"90s Bitch"</td>
+          <td class="separator">Extatic Records (Revealed)</td>
+          <td class="separator">with The Rocketman</td>
+        </tr>
+      </tbody>
+      <tbody class="hide" id="tr2024">
+        <tr>
+          <td>"Spiritum"</td>
+          <td rowspan="6" class="separator">2024</td>
+          <td>We Next (Sony Music )</td>
+          <td>with Vini Vici &amp; Shibui</td>
+        </tr>
+        <tr>
+          <td>"Open Sesame (Abracadabra)"</td>
+          <td rowspan="2">Revealed Recordings</td>
+          <td>rework of Open Sesame by Leila K, featuring Leila K</td>
+        </tr>
+        <tr>
+          <td>"16"</td>
+          <td>cover of "16" by Ard Und Jorn, with Hardwell and Blasterjaxx</td>
+        </tr>
+        <tr>
+          <td>"Adrenalina (Minha Gasolina)"</td>
+          <td>Extatic Records (Revealed)</td>
+          <td>with Ceres</td>
+        </tr>
+        <tr>
+          <td>"Meet Her At The Love Parade"</td>
+          <td>Smash The House</td>
+          <td>
+            rework of Meet Her at the Love Parade Da Hool, with Dimitri Vegas
+            &amp; Like Mike &amp; Da Hool featuring Kiki Solvej
+          </td>
+        </tr>
+        <tr>
+          <td class="separator">"Love Takes Over"</td>
+          <td class="separator">Extatic Records (Revealed)</td>
+          <td class="separator">featuring Sarah de Warren</td>
+        </tr>
       </tbody>
     </table>
     <script src="about.js"></script>
