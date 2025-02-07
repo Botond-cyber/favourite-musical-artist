@@ -602,6 +602,28 @@ th {
   flex-direction: column;
   padding: 50px;
 }
+.contactBtn{
+  background-color: #f7ddbb;
+  color: #111111;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.5em;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.buttonwrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+.contactBtn:hover{
+  background-color: #ffc273;
+}
+#contacth1{
+  color: #ffc273;
+  font-size: 3em;
+}
 .contatct_container h1{
   color: white;
   font-size: 2em;
