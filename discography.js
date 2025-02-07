@@ -13,7 +13,6 @@ const checkboxes = [
     { checkbox: document.getElementById('check2024'), row: document.getElementById('tr2024') }
 ];
 
-// Initially hide all rows
 checkboxes.forEach(({ row }) => {
     row.style.display = 'none';
 });

@@ -22,7 +22,11 @@ header {
   margin: 0;
   top: 0;
 }
-
+#barcontainer_about{
+  position: absolute;
+  top: 10%;
+  left: 5% !important;
+}
 .titleImageHolder img {
   width: 900px;
 }
@@ -587,6 +591,51 @@ th {
   border-bottom: 1px solid #fff;
   padding-bottom: 30px;
 }
+.contatct_container{
+  background-color: #111111;
+  width: 500px;
+  height: fit-content;
+  margin-top: 100px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.contatct_container h1{
+  color: white;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+#nav_contact{
+  position: absolute;
+  left: 10px;
+}
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+fieldset input, fieldset textarea{
+  width: 80%;
+  border-radius: 25px;
+  padding: 10px;
+  border: none;
+}
+.contact_body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
 
 @media only screen and (min-width: 1450px) {
   .profilePicture {
@@ -895,11 +944,31 @@ th {
     align-items: center;
     flex-direction: row;
     gap: 100px;
+    padding: 50px;
+  }
+  .aboutNav{
+    display: none;
   }
   .barcontainer{
     position: relative;
   }
   #barcon2{
     position: relative;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .discographytable{
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contatct_container{
+    width: 300px;
+  }
+  .contatct_container h1{
+    font-size: 1.5em;
+  }
+  fieldset input, fieldset textarea{
+    width: 90%;
   }
 }
